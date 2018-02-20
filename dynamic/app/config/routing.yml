@@ -1,0 +1,9 @@
+# routing interne à l'appli
+web_app:
+    resource: "@AppBundle/Controller/Web/"
+    type: annotation
+    prefix: /
+
+NelmioApiDocBundle:
+    resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
+    prefix:   /api/doc

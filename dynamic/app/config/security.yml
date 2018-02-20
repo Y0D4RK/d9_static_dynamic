@@ -1,0 +1,39 @@
+security:
+    encoders:
+        # defini le protocole de cryptage des mot de passes - indispensable
+        harsh:
+            algorithm: bcrypt
+            cost: 15
+
+    # cette clé défini les role au sein de notre application - gere les autorisation (ROLE_ADMIN => propre Ã  FosUser)
+    role_hierarchy:
+        # sf3 fos:user:demote  user1@mail.com ROLE_ADMIN
+        ROLE_ADMIN: ROLE_USER
+        ROLE_SUPER_ADMIN: ROLE_ADMIN
+
+
+    # Fourni les utilisateurs - c'est lui qui part d'un login et d'un mdp pour recup un user et ses droits
+    providers:
+        #lorsque les users sont dÃ©fini directement dans le fichier security.yml
+        in_memory:
+            memory: ~
+
+    # parefeu - gere le filtrage du user, donc son authentification
+    firewalls:
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+
+        # nom du parefeu - identique au nom defini dans config.yml
+        main:
+            # pattern : url qui declenche la mise en oeuvre du parefeu '^/' -> tous ce qui commence par un / mobilise le parefeu
+            pattern: ^/
+            stateless: true
+            anonymous: true
+            
+    # liste d'url, qui vont repondre Ã  des conditions d'accÃ¨s en fonction du role du user - connectÃ© ou non connectÃ©
+    access_control:
+        # chemin (regex) - toutes les URL qui commence par '/' et termine par login - necessite le role ...
+        # par defaut tout les user son anonyme sur symfony
+        # IS_AUTHENTICATED_ANONYMOUSLY
+        - { path: ^/, roles: IS_AUTHENTICATED_ANONYMOUSLY }

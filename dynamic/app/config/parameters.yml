@@ -1,0 +1,7 @@
+# This file is auto-generated during the composer install
+parameters:
+    mailer_transport: smtp
+    mailer_host: smtp.gmail.com
+    mailer_user: esgigroupeone@gmail.com
+    mailer_password: null
+    secret: ThisTokenIsNotSoSecretChangeIt
