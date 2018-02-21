@@ -31,8 +31,6 @@ class WebController extends Controller
             "\nPHP version : ".$match[0].
             "\nPlatform : ".PHP_OS. "\n$line\n";
 
-        dump($start);
-
         foreach ($methods as $method) {
             if (preg_match('/^test_/', $method)) {
                 $result = $bench->$method();
@@ -45,8 +43,6 @@ class WebController extends Controller
             "\n" . str_pad("Total time:", 25) .
             " : " . $total .
             " sec.";
-
-        dump($end);
 
 
         return $this->render('default/index.html.twig', [
