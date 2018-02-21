@@ -3,7 +3,7 @@ body {
     height: 100%;
     width: 100%;
     font-family: 'Trebuchet MS', Arial, sans-serif;
-    background-color: #C5C1C0;
+    background-color: #FFF;
     /*background-image: url('https://free4kwallpapers.com/uploads/wallpaper/15/07/16/low-poly-ice-1920x1080-wallpaper.jpg');*/
     background-size: cover;
 }
@@ -17,7 +17,7 @@ pre{
     font-weight: 600;
     padding: 30px 35%;
     border-radius: 0;
-    border: 1px solid #0A1612;
+    border: none;
 }
 h1{
     font-weight: bolder;
