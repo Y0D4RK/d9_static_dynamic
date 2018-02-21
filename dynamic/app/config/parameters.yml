@@ -5,3 +5,8 @@ parameters:
     mailer_user: esgigroupeone@gmail.com
     mailer_password: null
     secret: ThisTokenIsNotSoSecretChangeIt
+    database_host: null
+    database_port: null
+    database_name: null
+    database_user: null
+    database_password: null

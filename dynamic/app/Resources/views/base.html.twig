@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <link rel="icon" type="image/x-icon" href="{{ asset('/favicon.ico') }}" />
 
-    <title>{% block title %}Moving Mate{% endblock %}</title>
+    <title>{% block title %}Benchmark - serveur HTTP - site dynamique{% endblock %}</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
@@ -20,7 +20,6 @@
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     <!-- Fichier css -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css" >
-    <link href="{{ asset('css/stylebis.css') }}" rel="stylesheet" type="text/css" >
 
 </head>
 
@@ -28,21 +27,7 @@
 
 <div id="wrap">
 
-    <div id="wrapper">
-
-        {# popup info #}
-        {% for flash_message in app.session.flashBag.get('notice-success') %}
-            <div class="panel panel-default panel-notice">
-                <span class="success"> {{ flash_message }} </span>
-            </div>
-        {% endfor %}
-
-        {% for flash_message in app.session.flashBag.get('notice-error') %}
-            <div class="panel panel-default panel-notice">
-                <span class="erreur"> {{ flash_message }} </span>
-            </div>
-        {% endfor %}
-
+    <div id="wrapper" class="container-fluid">
         {# block content #}
         {% block content %}
 
