@@ -14,7 +14,7 @@ class WebController extends Controller
      * @Route("/", name="homepage")
      * @Method("GET")
      */
-    public function indexAction(Benchmark $benchmark, Request $request)
+    public function indexAction(Request $request)
     {
         $bench = new Benchmark();
         $methods = get_class_methods($bench);
