@@ -3,15 +3,6 @@
 /dynamic/build/
 /dynamic/bin/phpunit
 /dynamic/phpunit.xml
-/dynamic/var/*
-!/dynamic/var/cache
-/dynamic/var/cache/*
-!dynamic/var/cache/.gitkeep
-!/dynamic/var/logs
-/dynamic/var/logs/*
-!dynamic/var/logs/.gitkeep
-!/dynamic/var/sessions
-/dynamic/var/sessions/*
-!dynamic/var/sessions/.gitkeep
+/dynamic/var/
 /dynamic/vendor/
 /dynamic/web/bundles/
