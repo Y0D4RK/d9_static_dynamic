@@ -3,6 +3,7 @@ Bienvenue dans <strong style="color:black">mon environnement de benchmark</stron
 
 <p align="center">
   <img src="http://vpn-services.bestreviews.net/files/dynamic-vs-static-ip.jpg"/>
+  <p> TOTO </p>
 </p>
 
 ## Pourquoi ?
