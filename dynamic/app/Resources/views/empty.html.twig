@@ -2,6 +2,7 @@
 <html>
 
 <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,37 +10,22 @@
     <meta name="author" content="">
     <link rel="icon" type="image/x-icon" href="{{ asset('/favicon.ico') }}" />
 
-    <title>{% block title %}Moving Mate{% endblock %}</title>
+    <title>{% block title %}Benchmark - serveur HTTP - site dynamique{% endblock %}</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
-    <!-- Custom Fonts -->
-    <link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
-    <!-- Icon fav. -->
-    <link rel="icon" type="image/x-icon" href="" />
-    <!-- Fichier css -->
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css" >
 </head>
 
 <body>
 
 <div id="wrap">
 
-
-    <div id="wrapper-empty">
+    <div id="wrapper" class="container-fluid">
+        {# block content #}
         {% block content %}
 
         {% endblock %}
     </div>
 
-
 </div>
-<!-- /#wrapper -->
-
-{% block javascripts %}
-    <script src="{{ asset('js/jquery.min.js') }}"></script>
-    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-{% endblock javascripts %}
 
 </body>
 

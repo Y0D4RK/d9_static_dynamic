@@ -1,0 +1,11 @@
+{% extends '::empty.html.twig' %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-xs-12">
+            <div id="welcome">
+                 {{ phpinfo | raw }}
+            </div>
+        </div>
+    </div>
+{% endblock %}

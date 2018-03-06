@@ -52,4 +52,19 @@ class WebController extends Controller
             'content' => $content
         ]);
     }
+
+    /**
+     * @Route("/php/info", name="phpinfo")
+     * @Method("GET")
+     */
+    public function phpinfoAction(Request $request)
+    {
+        ob_start();
+        phpinfo();
+        $phpinfo = ob_get_clean();
+
+        return $this->render('default/phpinfo.html.twig', [
+            'phpinfo' => $phpinfo,
+        ]);
+    }
 }
