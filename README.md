@@ -1,27 +1,24 @@
-# Debian9 - Website statique & dynamique
-Bienvenue dans <strong style="color:black">mon environnement de benchmark</strong>
+# Debian9 - Benchmark web server - Static & dynamic website
+<strong style="color:black">Hello guys</strong>
 
 <p align="center">
   <img src="http://vpn-services.bestreviews.net/files/dynamic-vs-static-ip.jpg"/>
 </p>
 
-## Pourquoi ?
+## Why ?
 
-Le web contient un certain nombre d'application propre à la réalisation d'un serveur HTTP, parmi les plus connus:
+HTTP server, among the best known:
 
-- Apache (packagist: gestion des user),
-- Nginx  (packagist: gestion upload image),
-- ...
+- Apache,
+- Nginx
 
-Selon moi, nous nous devons de comparer ces deux applications, qui peuvent etre le coeur du business (e-commerce, etc).
-
-Les 2 websites sont là pour effectuer un BENCHMARK.
+Selon moi nous devons comparer ces deux logiciels qui peuvent etres des piliers pour notre business (e-commerce, etc). Lequel des deux est meilleur ?
 
 ### I. Mise en place du projets
 
 1) Cloner le projet :
 ```bash 
-$ git clone git@gitlab.com:victorgarciaparis13/MovingMate.git 
+$ git clone git@github.com:Y0D4RK/d9_static_dynamic.git
 ```
 
 ### II. Projet statique
@@ -44,6 +41,5 @@ c) Executer l'application (Symfony):
 $ php bin/console server:run
 ```
 d) Acceder à l'interface:
-Ouvrez votre navigateur et accéder à l'URI<strong> [localhost](localhost:8000) </strong> dans votre browser.
-
+Ouvrez votre navigateur et accéder à l'URI<strong> [localhost](localhost:8000) </strong> dans votre navigateur.
 
