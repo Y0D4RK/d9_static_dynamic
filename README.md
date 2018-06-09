@@ -12,34 +12,34 @@ HTTP server, among the best known:
 - Apache,
 - Nginx
 
-Selon moi nous devons comparer ces deux logiciels qui peuvent etres des piliers pour notre business (e-commerce, etc). Lequel des deux est meilleur ?
+According to me we have to compare these two softwares which can be pillars for our business (e-commerce, etc). Which one is better?
 
-### I. Mise en place du projets
+### I. Implementation
 
-1) Cloner le projet :
+1) Clone project :
 ```bash 
 $ git clone git@github.com:Y0D4RK/d9_static_dynamic.git
 ```
 
-### II. Projet statique
+### II. Static project
 
-Celui-ci ne contient que du HTML, CSS, Javascript et images.
-Le serveur n'execute pas de code pour génerer le HTML.
+This project (*static* folder) contain only HTML,CSS,Javascript and images files.
 
-### III. Projet dynamique 
 
-a) Entrer dans le dossier: 
+### III. Dynamic project - with Symfony 3.4
+
+a) Go to the folder *dynamic*: 
 ```bash
 $ cd dynamic
 ```
-b) Puis installer les vendors:
+b) Then install vendor:
 ```bash
 $ composer install
 ```
-c) Executer l'application (Symfony):
+c) Execute application:
 ```bash
 $ php bin/console server:run
 ```
-d) Acceder à l'interface:
-Ouvrez votre navigateur et accéder à l'URI<strong> [localhost](localhost:8000) </strong> dans votre navigateur.
+d) Watch:
+Open your browser and go to the URI <strong>[localhost](localhost:8000)</strong>.
 
