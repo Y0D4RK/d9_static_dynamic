@@ -1,5 +1,5 @@
 # Debian9 - Static & dynamic website - Benchmark
-<strong style="color:black">Hello guys</strong>
+<strong style="text-algin: center; color:black">WELCOME</strong>
 
 <p align="center">
   <img src="http://vpn-services.bestreviews.net/files/dynamic-vs-static-ip.jpg"/>
